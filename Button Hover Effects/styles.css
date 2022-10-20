@@ -1,0 +1,118 @@
+:root
+{
+    --Gray-Strong: #28272a;
+    --Gray-soft: #333;
+    --Gray-light: rgba(255,255,255,0.5);
+    --Blue-hover: #359ad8;
+    --Yellow-gold: #d3d36d;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--Gray-Strong);
+}
+a
+{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: var(--Gray-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Gray-light);
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 500;
+    gap: 10px;
+}
+a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--Blue-hover);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+
+}
+a:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+a span
+{
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+a:hover span
+{
+    color: var(--Gray-soft);
+}
+a i
+{
+    position: relative;
+    width: 2px;
+    height: 30px;
+    background: var(--Yellow-gold);
+    transition: 0.5s, width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.5s, 1s;
+}
+a:hover i
+{
+    width: 30px;
+    height: 2px;
+    background: var(--Gray-soft);
+    transition-delay: 0s, 1s, 0.5s;
+}
+a i::before
+{
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    transform-origin: right;
+    transition: 1s;
+}
+a:hover i::before
+{
+    background-color: var(--Gray-soft);
+    transform: rotate(45deg);
+    transition-delay: 1.5s;
+}
+a i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0.5px;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    transform-origin: right;
+    transition: 1s;
+}
+a:hover i::after
+{
+    background-color: var(--Gray-soft);
+    transform: rotate(-45deg);
+    transition-delay: 1.5s;
+}
