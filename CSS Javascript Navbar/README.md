@@ -1,4 +1,4 @@
-# Screenshot of the Anime.js effect
+# Screenshot of the CSS Javascript Navbar
 
 ![sample img](./sample.png)
 

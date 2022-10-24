@@ -10,3 +10,5 @@ This repository is intended to upload the practices I made following the YouTube
 
 - [Animate with Anime.js](./Animate%20with%20Animejs/)
 - [Button Hover Effects](./Button%20Hover%20Effects/)
+- [Animate Circular Progress Bar](./Animated%20Circular%20Progress%20Bar/)
+- [CSS Javascript Navbar](./CSS%20Javascript%20Navbar/)

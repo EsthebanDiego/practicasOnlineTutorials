@@ -2,4 +2,4 @@
 
 ![Sample img](./sample_hover.png)
 
-- [Return](../README.md)
+↩ [Return](../README.md)
